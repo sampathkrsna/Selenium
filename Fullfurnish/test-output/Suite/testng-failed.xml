@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="furnishing.sample">
+        <methods>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- furnishing.sample -->
+      <class name="cspackage.SofaClass">
+        <methods>
+          <include name="fullhouse"/>
+          <include name="OpenBrowser"/>
+          <include name="urlchecker"/>
+          <include name="Checkingtherurls"/>
+        </methods>
+      </class> <!-- cspackage.SofaClass -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

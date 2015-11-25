@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Sampath\AppData\Local\Temp\testng-eclipse-1213967578\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testng.Firstprog" hash-for-method="openbrowserandurl">openbrowserandurl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testing.Testng" hash-for-method="webopen">webopen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testng.Firstprog</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openbrowserandurl">
+                  </a> <!-- openbrowserandurl -->
+                  <span class="method-name">openbrowserandurl</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+272	addons.xpi	INFO	Mapping firefox@gingersoftware.2.0.0.64.com to C:\Program Files (x86)\Ginger\Mozilla\firefox@gingersoftware.2.0.0.64.com
+1412852280272	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1412852280272	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1412852280273	addons.xpi	INFO	Mapping {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852280273	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1412852280274	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Sampath\AppData\Local\Temp\anonymous6361414524846532977webdriver-profile\extensions\fxdriver@googlecode.com
+1412852280275	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Sampath\AppData\Local\Temp\anonymous6361414524846532977webdriver-profile\extensions\webdriver-staging
+1412852280275	addons.xpi	DEBUG	checkForChanges
+1412852280452	addons.xpi	DEBUG	No changes found
+1412852280455	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852280455	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852280460	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+console.error: skype_ff_extension: 
+  DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Traceback (most recent call last):
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 114, in startup/&lt;
+    run(options);
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 170, in run
+    let program = main(options.loader, options.main);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 645, in main
+    return loader.load(loader, module).exports;
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js&quot;, line 14, in null
+    var widgets = require(&quot;sdk/widget&quot;);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 619, in require
+    freeze(load(loader, module));
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://gre/modules/commonjs/sdk/widget.js&quot;, line 60, in null
+    &quot;The widget module is deprecated.  &quot; +
+  File &quot;resource://gre/modules/commonjs/sdk/util/deprecate.js&quot;, line 18, in deprecateUsage
+    let stack = get().slice(2);
+JavaScript error: resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/c2c_options_menu_localization.js, line 189: document.getElementById(...) is null
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+1412852285099	addons.xpi	DEBUG	Calling bootstrap method shutdown on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+1412852285758	addons.manager	DEBUG	shutdown
+1412852285761	addons.xpi	DEBUG	shutdown
+1412852285762	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1412852285768	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;rohit-pc&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_09&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at testng.Firstprog.openbrowserandurl(Firstprog.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+272	addons.xpi	INFO	Mapping firefox@gingersoftware.2.0.0.64.com to C:\Program Files (x86)\Ginger\Mozilla\firefox@gingersoftware.2.0.0.64.com
+1412852280272	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1412852280272	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1412852280273	addons.xpi	INFO	Mapping {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852280273	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1412852280274	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Sampath\AppData\Local\Temp\anonymous6361414524846532977webdriver-profile\extensions\fxdriver@googlecode.com
+1412852280275	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Sampath\AppData\Local\Temp\anonymous6361414524846532977webdriver-profile\extensions\webdriver-staging
+1412852280275	addons.xpi	DEBUG	checkForChanges
+1412852280452	addons.xpi	DEBUG	No changes found
+1412852280455	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852280455	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852280460	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+console.error: skype_ff_extension: 
+  DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Traceback (most recent call last):
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 114, in startup/&lt;
+    run(options);
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 170, in run
+    let program = main(options.loader, options.main);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 645, in main
+    return loader.load(loader, module).exports;
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js&quot;, line 14, in null
+    var widgets = require(&quot;sdk/widget&quot;);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 619, in require
+    freeze(load(loader, module));
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://gre/modules/commonjs/sdk/widget.js&quot;, line 60, in null
+    &quot;The widget module is deprecated.  &quot; +
+  File &quot;resource://gre/modules/commonjs/sdk/util/deprecate.js&quot;, line 18, in deprecateUsage
+    let stack = get().slice(2);
+JavaScript error: resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/c2c_options_menu_localization.js, line 189: document.getElementById(...) is null
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+1412852285099	addons.xpi	DEBUG	Calling bootstrap method shutdown on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+1412852285758	addons.manager	DEBUG	shutdown
+1412852285761	addons.xpi	DEBUG	shutdown
+1412852285762	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1412852285768	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 31 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testing.Testng</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="webopen">
+                  </a> <!-- webopen -->
+                  <span class="method-name">webopen</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+vider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1412852230039	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1412852230041	addons.xpi	DEBUG	startup
+1412852230041	addons.xpi	INFO	Mapping {F04D2D30-776C-4d02-8627-8E4385ECA58D} to C:\ProgramData\Norton\{92622AAD-05E8-4459-B256-765CE1E929FB}\NST_2014.5.0.67\coFFPlgn
+1412852230042	addons.xpi	INFO	Mapping firefox@gingersoftware.2.0.0.64.com to C:\Program Files (x86)\Ginger\Mozilla\firefox@gingersoftware.2.0.0.64.com
+1412852230042	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1412852230042	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1412852230043	addons.xpi	INFO	Mapping {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852230043	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1412852230044	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Sampath\AppData\Local\Temp\anonymous5444417532843264977webdriver-profile\extensions\fxdriver@googlecode.com
+1412852230044	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Sampath\AppData\Local\Temp\anonymous5444417532843264977webdriver-profile\extensions\webdriver-staging
+1412852230045	addons.xpi	DEBUG	checkForChanges
+1412852230218	addons.xpi	DEBUG	No changes found
+1412852230221	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852230221	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852230226	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+console.error: skype_ff_extension: 
+  DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Traceback (most recent call last):
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 114, in startup/&lt;
+    run(options);
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 170, in run
+    let program = main(options.loader, options.main);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 645, in main
+    return loader.load(loader, module).exports;
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js&quot;, line 14, in null
+    var widgets = require(&quot;sdk/widget&quot;);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 619, in require
+    freeze(load(loader, module));
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://gre/modules/commonjs/sdk/widget.js&quot;, line 60, in null
+    &quot;The widget module is deprecated.  &quot; +
+  File &quot;resource://gre/modules/commonjs/sdk/util/deprecate.js&quot;, line 18, in deprecateUsage
+    let stack = get().slice(2);
+JavaScript error: resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/c2c_options_menu_localization.js, line 189: document.getElementById(...) is null
+
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;rohit-pc&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_09&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at testing.Testng.webopen(Testng.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+vider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1412852230039	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1412852230041	addons.xpi	DEBUG	startup
+1412852230041	addons.xpi	INFO	Mapping {F04D2D30-776C-4d02-8627-8E4385ECA58D} to C:\ProgramData\Norton\{92622AAD-05E8-4459-B256-765CE1E929FB}\NST_2014.5.0.67\coFFPlgn
+1412852230042	addons.xpi	INFO	Mapping firefox@gingersoftware.2.0.0.64.com to C:\Program Files (x86)\Ginger\Mozilla\firefox@gingersoftware.2.0.0.64.com
+1412852230042	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1412852230042	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1412852230043	addons.xpi	INFO	Mapping {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852230043	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1412852230044	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Sampath\AppData\Local\Temp\anonymous5444417532843264977webdriver-profile\extensions\fxdriver@googlecode.com
+1412852230044	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Sampath\AppData\Local\Temp\anonymous5444417532843264977webdriver-profile\extensions\webdriver-staging
+1412852230045	addons.xpi	DEBUG	checkForChanges
+1412852230218	addons.xpi	DEBUG	No changes found
+1412852230221	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852230221	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1412852230226	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+console.error: skype_ff_extension: 
+  DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Traceback (most recent call last):
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 114, in startup/&lt;
+    run(options);
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 170, in run
+    let program = main(options.loader, options.main);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 645, in main
+    return loader.load(loader, module).exports;
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js&quot;, line 14, in null
+    var widgets = require(&quot;sdk/widget&quot;);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 619, in require
+    freeze(load(loader, module));
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://gre/modules/commonjs/sdk/widget.js&quot;, line 60, in null
+    &quot;The widget module is deprecated.  &quot; +
+  File &quot;resource://gre/modules/commonjs/sdk/util/deprecate.js&quot;, line 18, in deprecateUsage
+    let stack = get().slice(2);
+JavaScript error: resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/c2c_options_menu_localization.js, line 189: document.getElementById(...) is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 31 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Sampath\AppData\Local\Temp\testng-eclipse-1213967578\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.Testng&quot;/&gt;
+      &lt;class name=&quot;testng.Firstprog&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'webopen')
+data.setCell(0, 2, 'testing.Testng')
+data.setCell(0, 3, 50762);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openbrowserandurl')
+data.setCell(1, 2, 'testng.Firstprog')
+data.setCell(1, 3, 50099);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.Testng</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">webopen</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng.Firstprog</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openbrowserandurl</span>
+                <span class="method-start">50775 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
