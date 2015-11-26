@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "password" | sudo xhost +
+cd /home/kustommade/workspace/Dimensions
+echo "password" | sudo chmod 777 -R /home/kustommade/workspace
+ant

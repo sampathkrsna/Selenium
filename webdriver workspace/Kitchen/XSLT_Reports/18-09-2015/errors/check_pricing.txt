@@ -1,0 +1,36 @@
+Body Material : Boiling Water Proof (BWP) Plywood with lamination
+Door Material : MDF with Acrylic Finish
+Hardware Material : Hettich
+Drawer Type : Regular
+-------------------------------------------------------------------------
+Corner Unit Straight 48" element is not present in excel sheet - baseUnits
+Corner Unit L-Shaped 48" element is not present in excel sheet - baseUnits
+Corner Unit L-Shaped 44" element is not present in excel sheet - baseUnits
+Corner Unit Straight 44" element is not present in excel sheet - baseUnits
+Corner Unit Straight 42" element is not present in excel sheet - baseUnits
+Corner Unit L-Shaped 36" element is not present in excel sheet - baseUnits
+Corner Unit L-Shaped 42" element is not present in excel sheet - baseUnits
+Corner Unit Straight 36" element is not present in excel sheet - baseUnits
+Plain Shelves Unit 30" element is not present in excel sheet - baseUnits
+Plain Shelves Unit 20" element is not present in excel sheet - baseUnits
+Spice Rack 7" element is not present in excel sheet - baseUnits
+2*(1.05*(1510+755)+0.7*1421+0)+1810*1.0
+Spice Rack 8" - 8555 - 8456 - baseUnits
+2*(1.05*(1303+755)+0.7*1421+0)+1810*1.0
+Spice Rack 6" - 8121 - 8022 - baseUnits
+Spice Rack 9" element is not present in excel sheet - baseUnits
+Base dummy unit element is not present in excel sheet - baseUnits
+Cylinder Unit Regular element is not present in excel sheet - baseUnits
+Sink Unit Medium 32" element is not present in excel sheet - baseUnits
+Cylinder Unit Large element is not present in excel sheet - baseUnits
+2*(1.05*(1612+843)+0.7*1470+420)+4009*1.0
+Cutlery & Utensil Unit Medium - 12062 - 12403 - baseUnits
+2*(1.05*(1612+843)+0.7*4263+0)+8582*1.0
+Thali Unit Medium - 19705 - 20038 - baseUnits
+2*(1.05*(1816+1510)+0.7*2891+0)+5818*1.0
+Utensil Unit Regular - 16850 - 17090 - baseUnits
+2*(1.05*(1816+1510)+0.7*1519+560)+5208*1.0
+Cutlery & Utensil Unit Regular - 15439 - 16020 - baseUnits
+2*(1.05*(1816+1510)+0.7*4263+0)+10500*1.0
+Thali Unit Regular - 23452 - 24168 - baseUnits
+Utensil Unit 36" element is not present in excel sheet - baseUnits

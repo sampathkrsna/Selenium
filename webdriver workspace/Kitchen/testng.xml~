@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+  <parameter name="url" value="http://root.test.kustommade.com/kitchen"/>
+  
+  <test name="Kitchen">
+    <classes>
+      <class name="kitchen.kitchen"/>
+    </classes>
+  </test>
+  
+  <test name="Remove Kitchen">
+    <classes>
+      <class name="kitchen.RemoveUnits"/>
+    </classes>
+  </test>
+  
+  <test name="Add Kitchen">
+    <classes>
+      <class name="kitchen.AddUnits"/>
+    </classes>
+  </test>
+  
+</suite>
+

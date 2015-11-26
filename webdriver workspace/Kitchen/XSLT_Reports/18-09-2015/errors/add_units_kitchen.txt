@@ -1,0 +1,8 @@
+Width is not updating (decreasing) for base units at width : 48. oldwidth : 370 , newwidth : 298 for Corner Unit Straight 48" of 30.10
+Width is not updating (decreasing) for base units at width : 48. oldwidth : 298 , newwidth : 202 for Corner Unit L-Shaped 48" of 30.10
+Width is not updating (decreasing) for base units at width : 44. oldwidth : 202 , newwidth : 114 for Corner Unit L-Shaped 44" of 30.10
+Width is not updating (decreasing) for base units at width : 44. oldwidth : 114 , newwidth : 46 for Corner Unit Straight 44" of 30.10
+Width is not updating (decreasing) for base units at width : 42. oldwidth : 370 , newwidth : 304 for Corner Unit Straight 42" of 30.10
+Width is not updating (decreasing) for base units at width : 36. oldwidth : 304 , newwidth : 232 for Corner Unit L-Shaped 36" of 30.10
+Width is not updating (decreasing) for base units at width : 42. oldwidth : 232 , newwidth : 148 for Corner Unit L-Shaped 42" of 30.10
+Width is not updating (decreasing) for base units at width : 36. oldwidth : 148 , newwidth : 88 for Corner Unit Straight 36" of 30.10

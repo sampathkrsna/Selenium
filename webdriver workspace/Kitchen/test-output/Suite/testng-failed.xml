@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="url" value="http://root.test.customfurnish.com/"/>
+  <test name="Kitchen(failed)">
+    <classes>
+      <class name="kitchen.AddUnits">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.AddUnits -->
+      <class name="kitchen.kitchen">
+        <methods>
+          <include name="Kitchen" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.kitchen -->
+      <class name="kitchen.RemoveUnits">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- kitchen.RemoveUnits -->
+    </classes>
+  </test> <!-- Kitchen(failed) -->
+  <test name="Remove Kitchen(failed)">
+    <classes>
+      <class name="kitchen.AddUnits">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.AddUnits -->
+      <class name="kitchen.kitchen">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.kitchen -->
+      <class name="kitchen.RemoveUnits">
+        <methods>
+          <include name="removeUnits" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- kitchen.RemoveUnits -->
+    </classes>
+  </test> <!-- Remove Kitchen(failed) -->
+  <test name="Add Kitchen(failed)">
+    <classes>
+      <class name="kitchen.AddUnits">
+        <methods>
+          <include name="addUnits" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.AddUnits -->
+      <class name="kitchen.kitchen">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.kitchen -->
+      <class name="kitchen.RemoveUnits">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- kitchen.RemoveUnits -->
+    </classes>
+  </test> <!-- Add Kitchen(failed) -->
+</suite> <!-- Failed suite [Suite] -->

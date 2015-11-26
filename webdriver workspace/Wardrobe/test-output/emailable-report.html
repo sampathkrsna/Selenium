@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">AccessoriesPricing</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">210.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">CartPage</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">145.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">CheckTemplates</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">86.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">ExtremeDimensions</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">611.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">ForgotPassword</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">61.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">LandPageTemplates</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">LinksLandingPage</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">541.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">OrderPage</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">180.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Sliding Doors Change</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">103.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">SaveDesign</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">278.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Signup</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">9</td><td class="numi">339.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Signup_v2</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi">0</td><td class="numi">426.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Special Case</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">363.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">21</td><td class="numi">21</td><td class="numi">0</td><td class="numi_attn">12</td><td class="numi">3,354.7 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">AccessoriesPricing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">AccessoriesPrice.AccessoriesPrice</td><td><a href="#m1"><b>CheckAccessoriesPrice</b>  </a></td><td class="numi">1</td><td>1442516413167</td><td class="numi">201507</td></tr>
+<tr><th colspan="4">CartPage &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">CartPage.CartPage</td><td><a href="#m2"><b>Cartpage</b>  </a></td><td class="numi">1</td><td>1442516623340</td><td class="numi">136882</td></tr>
+<tr><th colspan="4">CheckTemplates &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">CheckTemplates.CheckTemplates</td><td><a href="#m3"><b>checkInformation</b>  </a></td><td class="numi">1</td><td>1442516770550</td><td class="numi">197</td></tr>
+<tr><th colspan="4">CheckTemplates &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">CheckTemplates.CheckTemplates</td><td><a href="#m4"><b>checkRedirection</b>  </a></td><td class="numi">1</td><td>1442516781598</td><td class="numi">64741</td></tr>
+<tr><th colspan="4">ExtremeDimensions &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">ExtremeDimensions.ExtremeDimensions</td><td><a href="#m5"><b>extremeDimensions</b>  </a></td><td class="numi">1</td><td>1442516847927</td><td class="numi">609492</td></tr>
+<tr><th colspan="4">ForgotPassword &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">ForgotPassword.ForgotPassword</td><td><a href="#m6"><b>forgotPassword</b>  </a></td><td class="numi">1</td><td>1442517464179</td><td class="numi">54348</td></tr>
+<tr><th colspan="4">LandPageTemplates &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">LandPageTemplates.CheckRedirection</td><td><a href="#m7"><b>Checkredirection</b>  </a></td><td class="numi">1</td><td>1442517525171</td><td class="numi">19</td></tr>
+<tr><th colspan="4">LinksLandingPage &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">LinksLandingPage.LinksLandingPage</td><td><a href="#m8"><b>LandingPage</b>  </a></td><td class="numi">1</td><td>1442517528882</td><td class="numi">538144</td></tr>
+<tr><th colspan="4">OrderPage &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">OrderPage.OrderPage</td><td><a href="#m9"><b>Orderpage</b>  </a></td><td class="numi">1</td><td>1442518075353</td><td class="numi">172310</td></tr>
+<tr><th colspan="4">Sliding Doors Change &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">SlidingDoors.SlidingDoorsChange</td><td><a href="#m10"><b>slidingdoorchange</b>  </a></td><td class="numi">1</td><td>1442518256596</td><td class="numi">94506</td></tr>
+<tr><th colspan="4">SaveDesign &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">SaveDesign.SaveDesign</td><td><a href="#m11"><b>Exteriors</b>  </a></td><td class="numi">1</td><td>1442518359892</td><td class="numi">127599</td></tr><tr class="passedodd"><td><a href="#m12"><b>Interiors</b>  </a></td><td class="numi">1</td><td>1442518496309</td><td class="numi">132965</td></tr>
+<tr><th colspan="4">Signup &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Signup.AccessoriesPage</td><td><a href="#m13"><b>Accessoriespage</b>  </a></td><td class="numi">1</td><td>1442518933661</td><td class="numi">3547</td></tr>
+<tr class="failedeven"><td rowspan="1">Signup.CartPage</td><td><a href="#m14"><b>Cartpage</b>  </a></td><td class="numi">1</td><td>1442518965311</td><td class="numi">3449</td></tr>
+<tr class="failedodd"><td rowspan="1">Signup.DimensionsPage</td><td><a href="#m15"><b>Dimensionspage</b>  </a></td><td class="numi">1</td><td>1442518805904</td><td class="numi">89993</td></tr>
+<tr class="failedeven"><td rowspan="1">Signup.DoorTypePage</td><td><a href="#m16"><b>DoorTypepage</b>  </a></td><td class="numi">1</td><td>1442518902920</td><td class="numi">3338</td></tr>
+<tr class="failedodd"><td rowspan="1">Signup.ExteriorsPage</td><td><a href="#m17"><b>Exteriorspage</b>  </a></td><td class="numi">1</td><td>1442518923209</td><td class="numi">3509</td></tr>
+<tr class="failedeven"><td rowspan="1">Signup.InteriorsPage</td><td><a href="#m18"><b>Interiorspage</b>  </a></td><td class="numi">1</td><td>1442518912801</td><td class="numi">3543</td></tr>
+<tr class="failedodd"><td rowspan="1">Signup.LandingPage</td><td><a href="#m19"><b>Landingpage</b>  </a></td><td class="numi">1</td><td>1442518637839</td><td class="numi">64456</td></tr>
+<tr class="failedeven"><td rowspan="1">Signup.OrderPage</td><td><a href="#m20"><b>Orderpage</b>  </a></td><td class="numi">1</td><td>1442518944174</td><td class="numi">3537</td></tr>
+<tr class="failedodd"><td rowspan="1">Signup.TemplatesPage</td><td><a href="#m21"><b>Templatespage</b>  </a></td><td class="numi">1</td><td>1442518708808</td><td class="numi">90610</td></tr>
+<tr><th colspan="4">Signup &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">Signup.Subscribe</td><td><a href="#m22"><b>subscribe</b>  </a></td><td class="numi">1</td><td>1442518954697</td><td class="numi">3924</td></tr>
+<tr><th colspan="4">Signup_v2 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="10">Signup_v2.Signup</td><td><a href="#m23"><b>Accessoriespage</b>  </a></td><td class="numi">1</td><td>1442518975725</td><td class="numi">23365</td></tr><tr class="passedodd"><td><a href="#m24"><b>Cartpage</b>  </a></td><td class="numi">1</td><td>1442519005290</td><td class="numi">23204</td></tr><tr class="passedodd"><td><a href="#m25"><b>Dimensionspage</b>  </a></td><td class="numi">1</td><td>1442519035959</td><td class="numi">78267</td></tr><tr class="passedodd"><td><a href="#m26"><b>DoorTypepage</b>  </a></td><td class="numi">1</td><td>1442519121250</td><td class="numi">23481</td></tr><tr class="passedodd"><td><a href="#m27"><b>Exteriorspage</b>  </a></td><td class="numi">1</td><td>1442519151234</td><td class="numi">23382</td></tr><tr class="passedodd"><td><a href="#m28"><b>Interiorspage</b>  </a></td><td class="numi">1</td><td>1442519181975</td><td class="numi">23395</td></tr><tr class="passedodd"><td><a href="#m29"><b>Landingpage</b>  </a></td><td class="numi">1</td><td>1442519211843</td><td class="numi">56195</td></tr><tr class="passedodd"><td><a href="#m30"><b>Orderpage</b>  </a></td><td class="numi">1</td><td>1442519274963</td><td class="numi">27078</td></tr><tr class="passedodd"><td><a href="#m31"><b>Subscribe</b>  </a></td><td class="numi">1</td><td>1442519309129</td><td class="numi">4453</td></tr><tr class="passedodd"><td><a href="#m32"><b>Templatespage</b>  </a></td><td class="numi">1</td><td>1442519320464</td><td class="numi">75019</td></tr>
+<tr><th colspan="4">Special Case &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">SpecialCase.SpecialCase</td><td><a href="#m33"><b>specialCase</b>  </a></td><td class="numi">1</td><td>1442519404176</td><td class="numi">354455</td></tr>
+</table>
+<h1>AccessoriesPricing</h1>
+<h2 id="m1">AccessoriesPrice.AccessoriesPrice:CheckAccessoriesPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>CartPage</h1>
+<h2 id="m2">CartPage.CartPage:Cartpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>CheckTemplates</h1>
+<h2 id="m3">CheckTemplates.CheckTemplates:checkInformation</h2>
+<div style="padding-left:3em">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 174 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.C87dOD}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 075bd8544ef25fe6c0ff4d78299d2626</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+<br/>at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at CheckTemplates.CheckTemplates.travelToEnd(Unknown Source)
+<br/>at CheckTemplates.CheckTemplates.checkInformation(Unknown Source)
+<br/>24 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">CheckTemplates.CheckTemplates:checkRedirection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ExtremeDimensions</h1>
+<h2 id="m5">ExtremeDimensions.ExtremeDimensions:extremeDimensions</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.7nwRxW}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d54ede32b26eeeb50862198b4d8021b5</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
+<br/>at ExtremeDimensions.ExtremeDimensions.updateDoorWidth(Unknown Source)
+<br/>at ExtremeDimensions.ExtremeDimensions.checkTopToolBarTraditionalDoors(Unknown Source)
+<br/>at ExtremeDimensions.ExtremeDimensions.designPage(Unknown Source)
+<br/>at ExtremeDimensions.ExtremeDimensions.extremeDimensions(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ForgotPassword</h1>
+<h2 id="m6">ForgotPassword.ForgotPassword:forgotPassword</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 37 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.aiccyx}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 74f3dbd6c1e568271b9ca85fea08e59a</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at ForgotPassword.ForgotPassword.manualSignin(Unknown Source)
+<br/>at ForgotPassword.ForgotPassword.forgotPassword(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LandPageTemplates</h1>
+<h2 id="m7">LandPageTemplates.CheckRedirection:Checkredirection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LinksLandingPage</h1>
+<h2 id="m8">LinksLandingPage.LinksLandingPage:LandingPage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>OrderPage</h1>
+<h2 id="m9">OrderPage.OrderPage:Orderpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Sliding Doors Change</h1>
+<h2 id="m10">SlidingDoors.SlidingDoorsChange:slidingdoorchange</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>SaveDesign</h1>
+<h2 id="m11">SaveDesign.SaveDesign:Exteriors</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">SaveDesign.SaveDesign:Interiors</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Signup</h1>
+<h2 id="m13">Signup.TemplatesPage:Templatespage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.oXACKV}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2a598312e804ed92384921f0e0ed1dc7</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.TemplatesPage.signinGoogle(Unknown Source)
+<br/>at Signup.TemplatesPage.Templatespage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">Signup.DimensionsPage:Dimensionspage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.kXHN8P}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 11d7a53dd48c79b788f1faa09b2fd7cc</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.DimensionsPage.signinGoogle(Unknown Source)
+<br/>at Signup.DimensionsPage.Dimensionspage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">Signup.AccessoriesPage:Accessoriespage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.SNP1jN}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7e1d2f6cb2121b0003e067864c1f6bbc</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.AccessoriesPage.navigateAccessoriesPage(Unknown Source)
+<br/>at Signup.AccessoriesPage.Accessoriespage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">Signup.DoorTypePage:DoorTypepage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.htYp6c}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d039f0d7de1f6fa3fd6a03d8afe0fd46</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.DoorTypePage.navigateDoorTypePage(Unknown Source)
+<br/>at Signup.DoorTypePage.DoorTypepage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">Signup.CartPage:Cartpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.Tsj2qB}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cca06b1fadb1b2c31e4acf3b6f64c779</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.CartPage.navigateCartPage(Unknown Source)
+<br/>at Signup.CartPage.Cartpage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">Signup.LandingPage:Landingpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.6yxo5y}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f8827a501583b30ecda46853b4bdde7a</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.LandingPage.signinGoogle(Unknown Source)
+<br/>at Signup.LandingPage.Landingpage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">Signup.ExteriorsPage:Exteriorspage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.hnZDIM}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 035ef86692753be7324f7fce2d674947</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.ExteriorsPage.navigateExteriorsPage(Unknown Source)
+<br/>at Signup.ExteriorsPage.Exteriorspage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">Signup.OrderPage:Orderpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.wKY8WS}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c6326f8037df7d93894048e0fa9bda17</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.OrderPage.navigateOrderPage(Unknown Source)
+<br/>at Signup.OrderPage.Orderpage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">Signup.InteriorsPage:Interiorspage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such element
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.9.248304,platform=Linux 3.16.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:03:00&apos;
+System info: host: &apos;kustommade-desktop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.16.0-43-generic&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.ZNa1z2}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6690336dbc191f391a6f6e706d0372a5</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at Signup.InteriorsPage.navigateInteriorsPage(Unknown Source)
+<br/>at Signup.InteriorsPage.Interiorspage(Unknown Source)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">Signup.Subscribe:subscribe</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Signup_v2</h1>
+<h2 id="m23">Signup_v2.Signup:Cartpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">Signup_v2.Signup:Accessoriespage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">Signup_v2.Signup:Dimensionspage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">Signup_v2.Signup:Subscribe</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">Signup_v2.Signup:Interiorspage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">Signup_v2.Signup:Orderpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">Signup_v2.Signup:Templatespage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">Signup_v2.Signup:Exteriorspage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">Signup_v2.Signup:DoorTypepage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">Signup_v2.Signup:Landingpage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Special Case</h1>
+<h2 id="m33">SpecialCase.SpecialCase:specialCase</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://root.test.customfurnish.com/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

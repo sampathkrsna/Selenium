@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Wardrobe]">
+  <parameter name="url" value="http://root.test.customfurnish.com/"/>
+  <test name="CheckTemplates(failed)">
+    <classes>
+      <class name="SlidingDoors.SlidingDoorsChange">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SlidingDoors.SlidingDoorsChange -->
+      <class name="ExtremeDimensions.ExtremeDimensions">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ExtremeDimensions.ExtremeDimensions -->
+      <class name="LinksLandingPage.LinksLandingPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- LinksLandingPage.LinksLandingPage -->
+      <class name="Signup.TemplatesPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.TemplatesPage -->
+      <class name="ForgotPassword.ForgotPassword">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- ForgotPassword.ForgotPassword -->
+      <class name="LandPageTemplates.CheckRedirection">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- LandPageTemplates.CheckRedirection -->
+      <class name="Signup.InteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.InteriorsPage -->
+      <class name="SaveDesign.SaveDesign">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SaveDesign.SaveDesign -->
+      <class name="CartPage.CartPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CartPage.CartPage -->
+      <class name="AccessoriesPrice.AccessoriesPrice">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- AccessoriesPrice.AccessoriesPrice -->
+      <class name="Signup.CartPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.CartPage -->
+      <class name="Signup.ExteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.ExteriorsPage -->
+      <class name="Signup.AccessoriesPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.AccessoriesPage -->
+      <class name="Signup.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.OrderPage -->
+      <class name="CheckTemplates.CheckTemplates">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="checkInformation"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CheckTemplates.CheckTemplates -->
+      <class name="SpecialCase.SpecialCase">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SpecialCase.SpecialCase -->
+      <class name="Signup_v2.Signup">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup_v2.Signup -->
+      <class name="Signup.DimensionsPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.DimensionsPage -->
+      <class name="OrderPage.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- OrderPage.OrderPage -->
+      <class name="Signup.Subscribe">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.Subscribe -->
+      <class name="Signup.LandingPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.LandingPage -->
+      <class name="Signup.DoorTypePage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.DoorTypePage -->
+    </classes>
+  </test> <!-- CheckTemplates(failed) -->
+  <test name="ExtremeDimensions(failed)">
+    <classes>
+      <class name="SlidingDoors.SlidingDoorsChange">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SlidingDoors.SlidingDoorsChange -->
+      <class name="ExtremeDimensions.ExtremeDimensions">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="extremeDimensions" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ExtremeDimensions.ExtremeDimensions -->
+      <class name="LinksLandingPage.LinksLandingPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- LinksLandingPage.LinksLandingPage -->
+      <class name="Signup.TemplatesPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.TemplatesPage -->
+      <class name="ForgotPassword.ForgotPassword">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- ForgotPassword.ForgotPassword -->
+      <class name="LandPageTemplates.CheckRedirection">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- LandPageTemplates.CheckRedirection -->
+      <class name="Signup.InteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.InteriorsPage -->
+      <class name="SaveDesign.SaveDesign">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SaveDesign.SaveDesign -->
+      <class name="CartPage.CartPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CartPage.CartPage -->
+      <class name="AccessoriesPrice.AccessoriesPrice">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- AccessoriesPrice.AccessoriesPrice -->
+      <class name="Signup.CartPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.CartPage -->
+      <class name="Signup.ExteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.ExteriorsPage -->
+      <class name="Signup.AccessoriesPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.AccessoriesPage -->
+      <class name="Signup.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.OrderPage -->
+      <class name="SpecialCase.SpecialCase">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SpecialCase.SpecialCase -->
+      <class name="CheckTemplates.CheckTemplates">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CheckTemplates.CheckTemplates -->
+      <class name="Signup_v2.Signup">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup_v2.Signup -->
+      <class name="Signup.DimensionsPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.DimensionsPage -->
+      <class name="OrderPage.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- OrderPage.OrderPage -->
+      <class name="Signup.Subscribe">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.Subscribe -->
+      <class name="Signup.LandingPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.LandingPage -->
+      <class name="Signup.DoorTypePage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.DoorTypePage -->
+    </classes>
+  </test> <!-- ExtremeDimensions(failed) -->
+  <test name="ForgotPassword(failed)">
+    <classes>
+      <class name="SlidingDoors.SlidingDoorsChange">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SlidingDoors.SlidingDoorsChange -->
+      <class name="ExtremeDimensions.ExtremeDimensions">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ExtremeDimensions.ExtremeDimensions -->
+      <class name="LinksLandingPage.LinksLandingPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- LinksLandingPage.LinksLandingPage -->
+      <class name="Signup.TemplatesPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.TemplatesPage -->
+      <class name="ForgotPassword.ForgotPassword">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="forgotPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ForgotPassword.ForgotPassword -->
+      <class name="LandPageTemplates.CheckRedirection">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- LandPageTemplates.CheckRedirection -->
+      <class name="Signup.InteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.InteriorsPage -->
+      <class name="SaveDesign.SaveDesign">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SaveDesign.SaveDesign -->
+      <class name="CartPage.CartPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CartPage.CartPage -->
+      <class name="AccessoriesPrice.AccessoriesPrice">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- AccessoriesPrice.AccessoriesPrice -->
+      <class name="Signup.CartPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.CartPage -->
+      <class name="Signup.ExteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.ExteriorsPage -->
+      <class name="Signup.AccessoriesPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.AccessoriesPage -->
+      <class name="Signup.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.OrderPage -->
+      <class name="SpecialCase.SpecialCase">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SpecialCase.SpecialCase -->
+      <class name="CheckTemplates.CheckTemplates">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CheckTemplates.CheckTemplates -->
+      <class name="Signup_v2.Signup">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup_v2.Signup -->
+      <class name="Signup.DimensionsPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.DimensionsPage -->
+      <class name="OrderPage.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- OrderPage.OrderPage -->
+      <class name="Signup.Subscribe">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.Subscribe -->
+      <class name="Signup.LandingPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.LandingPage -->
+      <class name="Signup.DoorTypePage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.DoorTypePage -->
+    </classes>
+  </test> <!-- ForgotPassword(failed) -->
+  <test name="Signup(failed)">
+    <classes>
+      <class name="SlidingDoors.SlidingDoorsChange">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SlidingDoors.SlidingDoorsChange -->
+      <class name="ExtremeDimensions.ExtremeDimensions">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ExtremeDimensions.ExtremeDimensions -->
+      <class name="LinksLandingPage.LinksLandingPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- LinksLandingPage.LinksLandingPage -->
+      <class name="Signup.TemplatesPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="Templatespage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Signup.TemplatesPage -->
+      <class name="ForgotPassword.ForgotPassword">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- ForgotPassword.ForgotPassword -->
+      <class name="LandPageTemplates.CheckRedirection">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- LandPageTemplates.CheckRedirection -->
+      <class name="Signup.InteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="Interiorspage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Signup.InteriorsPage -->
+      <class name="SaveDesign.SaveDesign">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- SaveDesign.SaveDesign -->
+      <class name="CartPage.CartPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CartPage.CartPage -->
+      <class name="AccessoriesPrice.AccessoriesPrice">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- AccessoriesPrice.AccessoriesPrice -->
+      <class name="Signup.CartPage">
+        <methods>
+          <include name="Cartpage" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.CartPage -->
+      <class name="Signup.AccessoriesPage">
+        <methods>
+          <include name="afterTest"/>
+          <include name="Accessoriespage" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.AccessoriesPage -->
+      <class name="Signup.ExteriorsPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="Exteriorspage" invocation-numbers="0"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.ExteriorsPage -->
+      <class name="Signup.OrderPage">
+        <methods>
+          <include name="Orderpage" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.OrderPage -->
+      <class name="SpecialCase.SpecialCase">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SpecialCase.SpecialCase -->
+      <class name="CheckTemplates.CheckTemplates">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CheckTemplates.CheckTemplates -->
+      <class name="Signup_v2.Signup">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup_v2.Signup -->
+      <class name="Signup.DimensionsPage">
+        <methods>
+          <include name="Dimensionspage" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.DimensionsPage -->
+      <class name="OrderPage.OrderPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- OrderPage.OrderPage -->
+      <class name="Signup.DoorTypePage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="DoorTypepage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Signup.DoorTypePage -->
+      <class name="Signup.LandingPage">
+        <methods>
+          <include name="Landingpage" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Signup.LandingPage -->
+      <class name="Signup.Subscribe">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Signup.Subscribe -->
+    </classes>
+  </test> <!-- Signup(failed) -->
+</suite> <!-- Failed suite [Wardrobe] -->

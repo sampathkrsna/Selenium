@@ -1,0 +1,3 @@
+Width is not updating (increasing) for Base unit Corner Unit Straight 36" at width : 36. oldwidth : 58 , newwidth : 118 in LShapedKitchen of 19.4
+Width is not updating (increasing) for Base unit Corner Unit Straight 36" at width : 36. oldwidth : 53 , newwidth : 113 in UShapedKitchen of 19.5
+Width is not updating (increasing) for Base unit Corner Unit Straight 36" at width : 36. oldwidth : 113 , newwidth : 173 in UShapedKitchen of 19.5

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Wardrobe" parallel="false">
+  
+  <parameter name="url" value="http://root.test.customfurnish.com/"/> 
+  
+  <test name="AccessoriesPricing">
+    <classes>
+      <class name="AccessoriesPrice.AccessoriesPrice"/>
+    </classes>
+  </test> 
+  
+  <test name="CartPage">
+    <classes>
+      <class name="CartPage.CartPage"/>
+    </classes>
+  </test>  
+  
+  <test name="CheckTemplates">
+    <classes>
+      <class name="CheckTemplates.CheckTemplates"/>
+    </classes>
+  </test>
+  
+  <test name="ExtremeDimensions">
+    <classes>
+      <class name="ExtremeDimensions.ExtremeDimensions"/>
+    </classes>
+  </test>
+  
+  <test name="ForgotPassword">
+    <classes>
+      <class name="ForgotPassword.ForgotPassword"/>
+    </classes>
+  </test>
+  
+  <test name="LandPageTemplates">
+    <classes>
+      <class name="LandPageTemplates.CheckRedirection"/>
+    </classes>
+  </test>
+  
+  <test name="LinksLandingPage">
+    <classes>
+      <class name="LinksLandingPage.LinksLandingPage"/>
+    </classes>
+  </test>
+  
+  <test name="OrderPage">
+    <classes>
+      <class name="OrderPage.OrderPage"/>
+    </classes>
+  </test> 
+  
+  <test name="Sliding Doors Change">
+    <classes>
+      <class name="SlidingDoors.SlidingDoorsChange"/>
+    </classes>
+  </test> 
+  
+  <test name="SaveDesign">
+    <classes>
+      <class name="SaveDesign.SaveDesign"/>
+    </classes>
+  </test> 
+  
+  <test name="Signup">
+    <classes>
+      <class name="Signup.LandingPage"/>
+	  <class name="Signup.TemplatesPage"/>  
+      <class name="Signup.DimensionsPage"/>
+      <class name="Signup.DoorTypePage"/>
+      <class name="Signup.InteriorsPage"/>
+      <class name="Signup.ExteriorsPage"/>
+      <class name="Signup.AccessoriesPage"/>
+      <class name="Signup.OrderPage"/>
+      <class name="Signup.Subscribe"/> 
+      <class name="Signup.CartPage"/>
+    </classes>
+  </test>
+  
+  <test name="Signup_v2">
+    <classes>
+      <class name="Signup_v2.Signup"/>
+    </classes>
+  </test>
+  
+  <test name="Special Case">
+    <classes>
+      <class name="SpecialCase.SpecialCase"/>
+    </classes>
+  </test>
+  
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Check Dimensions" parallel="false">
+  
+  <parameter name="url" value="http://root.test.customfurnish.com/"/> 
+  
+  <test name="Full Panel Doors">
+    <classes>
+      <class name="dimensions.FullPanelDoors"/>
+    </classes>
+  </test> 
+  
+  <test name="Sliding Doors">
+    <classes>
+      <class name="dimensions.SlidingDoors"/>
+    </classes>
+  </test> 
+  
+  <test name="External Doors">
+    <classes>
+      <class name="dimensions.ExternalDoors"/>
+    </classes>
+  </test>
+  
+</suite>

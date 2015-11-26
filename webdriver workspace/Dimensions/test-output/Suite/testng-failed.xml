@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="url" value="http://root.test.kustommade.com/"/>
+  <test name="Full Panel Doors(failed)">
+    <classes>
+      <class name="FullPanelDoors.CheckDimensions">
+        <methods>
+          <include name="fullpanel"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- FullPanelDoors.CheckDimensions -->
+    </classes>
+  </test> <!-- Full Panel Doors(failed) -->
+</suite> <!-- Failed suite [Suite] -->

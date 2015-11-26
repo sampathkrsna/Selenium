@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Kitchen" parallel="false">
+
+  <parameter name="url" value="http://root.test.customfurnish.com/modular-kitchens"/>
+ 
+  <test name="Kitchen Schedule Callback">
+    <classes>
+      <class name="kitchen.ScheduleCallBack"/>
+    </classes>
+  </test>
+  
+  <test name="Remove Kitchen">
+    <classes>
+      <class name="kitchen.RemoveUnits"/>
+    </classes>
+  </test>
+  
+  <test name="Add Kitchen">
+    <classes>
+      <class name="kitchen.AddUnits"/>
+    </classes>
+  </test>
+  
+  <test name="Kitchen Pricing">
+    <classes>
+      <class name="kitchen.Pricing"/>
+    </classes>
+  </test>
+  
+  <test name="Dimensions Check">
+    <classes>
+      <class name="kitchen.DimensionsCheck"/>
+    </classes>
+  </test>
+  
+</suite>
+

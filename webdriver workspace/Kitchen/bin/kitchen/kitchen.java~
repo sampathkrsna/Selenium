@@ -1,0 +1,286 @@
+package kitchen;
+
+import java.util.List;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class kitchen {
+	WebDriver driver;
+	static String message = "";
+	String project_path = System.getProperty("user.dir");
+	static PrintWriter writer;
+	
+	@BeforeMethod
+	@Parameters("url")
+	public void beforeMethod(String url) throws InterruptedException, IOException {
+		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		Date date = new Date();
+		String systemDate = dateFormat.format(date);
+		File file = new File(project_path + "/XSLT_Reports/"+systemDate+"/errors/sliding.txt");
+		writer = new PrintWriter(new FileWriter(file));
+		System.setProperty("webdriver.chrome.driver", project_path
+				+ "/libs/chromedriver");
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("test-type");
+		capabilities.setCapability("chrome.binary", project_path
+				+ "/libs/chromedriver");
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		driver = new ChromeDriver(capabilities);
+		driver.manage().window().maximize();
+		driver.get(url);
+	}
+
+	@AfterMethod
+	public void afterMethod() throws IOException {
+		driver.quit();
+		writer.close();
+	}
+
+	@Test
+	@Parameters("url")
+	public void extremeDimensions(String url) throws InterruptedException,IOException {
+		removeElements();
+	}
+	
+	public void removeElements() throws InterruptedException, IOException{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@class='kitchen-start-design-button']")).click();
+		removeElementsLShapedKitchen();
+		removeElementsStraightKitchen();
+		removeElementsUShapedKitchen();
+		removeElementsParallelKitchen();		
+	}
+	
+	public void removeElementsLShapedKitchen() throws InterruptedException, IOException{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='layout-selection']/div[2]/ul/li[1]/div/div[1]")).click();
+		String feet = Integer.toString(randInt(7, 30));
+		String inches = Integer.toString(randInt(0, 11));
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-feet']"))).selectByValue(feet);
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-inches']"))).selectByValue(inches);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//*[@id='what-included']")));
+		Thread.sleep(2000);
+		String kitchenType = "LShapedKitchen";
+		removeBaseUnits(kitchenType);
+		removeWallUnits(kitchenType);
+		removeTallUnits(kitchenType);
+		compareSpaces(kitchenType);
+		addBaseUnits(kitchenType);
+	}
+	
+	public void removeElementsStraightKitchen() throws InterruptedException, IOException{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='layout-selection']/div[2]/ul/li[2]/div/div[1]")).click();
+		String feet = Integer.toString(randInt(4, 30));
+		String inches = Integer.toString(randInt(0, 11));
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-feet']"))).selectByValue(feet);
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-inches']"))).selectByValue(inches);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//*[@id='what-included']")));
+		Thread.sleep(2000);
+		String kitchenType = "StraightKitchen";
+		removeBaseUnits(kitchenType);
+		removeWallUnits(kitchenType);
+		removeTallUnits(kitchenType);
+		compareSpaces(kitchenType);
+	}
+	
+	public void removeElementsUShapedKitchen() throws InterruptedException, IOException{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='layout-selection']/div[2]/ul/li[3]/div/div[1]")).click();
+		String feet = Integer.toString(randInt(7, 30));
+		String inches = Integer.toString(randInt(0, 11));
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-feet']"))).selectByValue(feet);
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-inches']"))).selectByValue(inches);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//*[@id='what-included']")));
+		Thread.sleep(2000);
+		String kitchenType = "UShapedKitchen";
+		removeBaseUnits(kitchenType);
+		removeWallUnits(kitchenType);
+		removeTallUnits(kitchenType);
+		compareSpaces(kitchenType);
+	}
+	
+	public void removeElementsParallelKitchen() throws InterruptedException, IOException{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='layout-selection']/div[2]/ul/li[4]/div/div[1]")).click();
+		String feet = Integer.toString(randInt(4, 30));
+		String inches = Integer.toString(randInt(0, 11));
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-feet']"))).selectByValue(feet);
+		new Select(driver.findElement(By.xpath("//*[@id='running-length-inches']"))).selectByValue(inches);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//*[@id='what-included']")));
+		Thread.sleep(2000);
+		String kitchenType = "ParallelKitchen";
+		removeBaseUnits(kitchenType);
+		removeWallUnits(kitchenType);
+		removeTallUnits(kitchenType);
+		compareSpaces(kitchenType);
+	}
+	
+	public void removeBaseUnits(String kitchenType) throws InterruptedException, IOException{
+		List<WebElement> baseunits = driver.findElements(By.xpath("//*[@id='added-cabinets-Base']/tr"));
+		int base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText()),new_base_space=0;
+		int base_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText()),new_cost=0;
+		int cost,width;
+		for (WebElement baseunit : baseunits) {
+			String id = baseunit.getAttribute("id");
+			width = convetorToInt(driver.findElement(By.xpath("//*[@id='"+id+"']/td[2]")).getText());
+			cost = convetorToInt(driver.findElement(By.xpath("//*[@id='"+id+"']/td[3]")).getText());
+			driver.findElement(By.xpath("//*[@id='"+id+"']/td[4]/a/img")).click();
+			Thread.sleep(3000);
+			new_base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText());
+			new_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText());
+			if(new_base_space != (base_space + width)){
+				writer.println("Width is not updating (increasing) for base units at width : "+width+". oldwidth : "+base_space+" , newwidth : "+new_base_space+" in "+kitchenType);
+			}
+			if(new_cost != (base_cost - cost)){
+				writer.println("Cost is not updating (increasing) for base units at price : "+cost+". oldcost : "+base_cost+" , newcost : "+new_cost+" in "+kitchenType);
+			}
+			base_space = new_base_space;
+			base_cost = new_cost;
+		}
+	}
+	
+	public void removeWallUnits(String kitchenType) throws InterruptedException, IOException{
+		List<WebElement> wallunits = driver.findElements(By.xpath("//*[@id='added-cabinets-Wall']/tr"));
+		int wall_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Wall']")).getText()),new_wall_space=0;
+		int base_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText()),new_cost=0;
+		int cost,width;
+		for (WebElement wallunit : wallunits) {
+			String id = wallunit.getAttribute("id");
+			width = convetorToInt(driver.findElement(By.xpath("//*[@id='"+id+"']/td[2]")).getText());
+			cost = convetorToInt(driver.findElement(By.xpath("//*[@id='"+id+"']/td[3]")).getText());
+			driver.findElement(By.xpath("//*[@id='"+id+"']/td[4]/a/img")).click();
+			Thread.sleep(3000);
+			new_wall_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Wall']")).getText());
+			new_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText());
+			if(new_wall_space != (wall_space + width)){
+				writer.println("Width is not updating (increasing) for wall units at width : "+width+". oldwidth : "+wall_space+" , newwidth : "+new_wall_space+" in "+kitchenType);
+				
+			}
+			if(new_cost != (base_cost - cost)){
+				writer.println("Cost is not updating (increasing) for wall units at price : "+cost+". oldcost : "+base_cost+" , newcost : "+new_cost+" in "+kitchenType);
+				
+			}
+			wall_space = new_wall_space;
+			base_cost = new_cost;
+		}
+	}
+	
+	public void removeTallUnits(String kitchenType) throws InterruptedException, IOException{
+		List<WebElement> tallunits = driver.findElements(By.xpath("//*[@id='added-cabinets-Tall']/tr"));
+		int base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText()),new_base_space=0;
+		int wall_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Wall']")).getText()),new_wall_space=0;
+		int base_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText()),new_cost=0;
+		int cost,width;
+		for (WebElement tallunit : tallunits) {
+			String id = tallunit.getAttribute("id");
+			width = convetorToInt(driver.findElement(By.xpath("//*[@id='"+id+"']/td[2]")).getText());
+			cost = convetorToInt(driver.findElement(By.xpath("//*[@id='"+id+"']/td[3]")).getText());
+			driver.findElement(By.xpath("//*[@id='"+id+"']/td[4]/a/img")).click();
+			Thread.sleep(3000);
+			new_base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText());
+			new_wall_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Wall']")).getText());
+			new_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText());
+			if(new_base_space != (base_space + width)){
+				writer.println("Width is not updating (increasing) for tall units at width : "+width+". oldwidth : "+base_space+" , newwidth : "+new_base_space+" in "+kitchenType);
+				
+			}
+			if(new_wall_space != (wall_space + width)){
+				writer.println("Width is not updating (increasing) for tall units at width : "+width+". oldwidth : "+wall_space+" , newwidth : "+new_wall_space+" in "+kitchenType);
+				
+			}
+			if(new_cost != (base_cost - cost)){
+				writer.println("Cost is not updating (increasing) for tall units at price : "+cost+". oldcost : "+base_cost+" , newcost : "+new_cost+" in "+kitchenType);
+				
+			}
+			base_space = new_base_space;
+			wall_space = new_wall_space;
+			base_cost = new_cost;
+		}
+	}
+	
+	public void compareSpaces(String kitchenType) throws IOException{
+		int base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText());
+		int wall_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Wall']")).getText());
+		if(base_space != (wall_space+36)){
+			writer.println("Expected space is 36 but base units space : "+base_space+" , wall units space : "+wall_space+" in "+kitchenType);
+			
+		}
+	}
+	
+	public void addBaseUnits(String kitchenType) throws InterruptedException, IOException{
+		List<WebElement> allunits = driver.findElements(By.xpath("//*[@id='tab-baseUnits']/ul/li"));
+		int noofUnits = allunits.size();
+		int base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText()),new_base_space=0;
+		int base_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText()),new_cost=0;
+		int index,width,unitCost;
+		for(int i=1 ; i<noofUnits ; i++){
+			String itemName =  driver.findElement(By.xpath("//*[@id='tab-baseUnits']/ul/li["+i+"]/div/div[1]/span")).getText();
+			String dimensions = driver.findElement(By.xpath("//*[@id='tab-baseUnits']/ul/li["+i+"]/div/div[2]/label")).getText();
+			index = dimensions.indexOf(":");
+			width = convetorToInt(dimensions.substring(index,index+3));
+			unitCost = convetorToInt(driver.findElement(By.xpath("//*[@id='tab-baseUnits']/ul/li["+i+"]/div/div[2]/div/div/span[2]")).getText());
+			driver.findElement(By.xpath("//*[@id='tab-baseUnits']/ul/li["+i+"]/div/div[3]/p")).click();
+			Thread.sleep(3000);
+			new_base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText());
+			new_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText());
+			if(new_base_space != (base_space - width)){
+				writer.println("Width is not updating (decreasing) for base units at width : "+width+". oldwidth : "+base_space+" , newwidth : "+new_base_space+" for "+itemName);
+				
+			}
+			if(new_cost != (base_cost + unitCost)){
+				writer.println("Cost is not updating (decreasing) for base units at price : "+unitCost+". oldcost : "+base_cost+" , newcost : "+new_cost+" for "+itemName);
+				
+			}
+			if(i%6 == 0){
+				removeBaseUnits(kitchenType);
+				base_space = convetorToInt(driver.findElement(By.xpath("//*[@id='remaining-length-Base']")).getText());
+				base_cost = convetorToInt(driver.findElement(By.xpath("//*[@id='kitchen-price']/div[1]/b[2]")).getText());
+			}
+			else{
+				base_space = new_base_space;
+				base_cost = new_cost;
+			}
+		}
+	}
+	
+	public static int convetorToInt(String strValue) {
+		int intValue=0;
+		for (int i=0;i<strValue.length();i++){
+			if(Character.isDigit(strValue.charAt(i))){
+				intValue = intValue*10 + Character.getNumericValue(strValue.charAt(i));
+			}
+		}
+		if (strValue.contains("-"))
+			return -1*intValue;
+		return intValue;
+	}
+	
+	
+	public static int randInt(int min,int max) {
+	    Random rand = new Random();
+	    return rand.nextInt((max - min) + 1) + min;
+	}
+}
+
+

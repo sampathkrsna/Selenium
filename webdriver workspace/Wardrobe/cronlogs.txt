@@ -1,0 +1,117 @@
+access control disabled, clients can connect from any host
+Buildfile: /home/kustommade/workspace/Wardrobe/build.xml
+
+clean:
+     [echo] deleting existing build directory
+   [delete] Deleting directory /home/kustommade/workspace/Wardrobe/build
+
+setClassPath:
+
+init:
+    [mkdir] Created dir: /home/kustommade/workspace/Wardrobe/build
+
+loadTestNG:
+
+compile:
+     [echo] 
+     [echo] compiling……….
+    [javac] Compiling 23 source files to /home/kustommade/workspace/Wardrobe/build
+
+run:
+   [delete] Deleting directory /home/kustommade/workspace/Wardrobe/XSLT_Reports
+    [mkdir] Created dir: /home/kustommade/workspace/Wardrobe/XSLT_Reports/18-09-2015
+    [mkdir] Created dir: /home/kustommade/workspace/Wardrobe/XSLT_Reports/18-09-2015/errors
+   [testng] [TestNG] Running:
+   [testng]   /home/kustommade/workspace/Wardrobe/testng.xml
+   [testng] 
+   [testng] Starting ChromeDriver (v2.9.248304) on port 29685
+   [testng] [0.548][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 22519
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 11143
+   [testng] [0.498][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 28592
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 13811
+   [testng] [0.499][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 28170
+   [testng] [0.495][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 15284
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 29808
+   [testng] [0.502][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 21247
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 19729
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 30248
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 20014
+   [testng] [0.480][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 15184
+   [testng] [0.497][WARNING]: PAC support disabled because there is no system implementation
+   [testng] [55.726][SEVERE]: Unable to receive message from renderer
+   [testng] [55.726][SEVERE]: Unable to receive message from renderer
+   [testng] Starting ChromeDriver (v2.9.248304) on port 26427
+   [testng] [0.502][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 26661
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 22208
+   [testng] [0.502][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 26760
+   [testng] [0.502][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 11711
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 19156
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 13126
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 21860
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 30667
+   [testng] [0.499][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 29513
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 19979
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 2298
+   [testng] [0.499][WARNING]: PAC support disabled because there is no system implementation
+   [testng] [65.264][SEVERE]: Unable to receive message from renderer
+   [testng] [65.264][SEVERE]: Unable to receive message from renderer
+   [testng] Starting ChromeDriver (v2.9.248304) on port 10090
+   [testng] [0.499][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 9742
+   [testng] [0.502][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 18878
+   [testng] [0.498][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 17009
+   [testng] [0.499][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 19713
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 20837
+   [testng] [0.504][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 13711
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] [62.205][SEVERE]: Unable to receive message from renderer
+   [testng] [62.205][SEVERE]: Unable to receive message from renderer
+   [testng] Starting ChromeDriver (v2.9.248304) on port 31074
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] 
+   [testng] ===============================================
+   [testng] Wardrobe
+   [testng] Total tests run: 33, Failures: 12, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] The tests failed.
+
+makexsltreports:
+     [xslt] Processing /home/kustommade/workspace/Wardrobe/test-output/testng-results.xml to /home/kustommade/workspace/Wardrobe/XSLT_Reports/18-09-2015/index.html
+     [xslt] Loading stylesheet /home/kustommade/workspace/Wardrobe/src/xslt/testng-results.xsl
+
+sendMail:
+      [zip] Building zip: /home/kustommade/workspace/Wardrobe/XSLT_Reports/18-09-2015.zip
+     [mail] Sending email: Test Reports
+     [mail] Sent email with 1 attachment
+
+BUILD SUCCESSFUL
+Total time: 56 minutes 6 seconds

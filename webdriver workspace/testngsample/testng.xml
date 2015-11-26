@@ -1,0 +1,7 @@
+&lt;suite name="TestNG-suite" &gt;
+&lt;test name="Curtain" &gt;
+&lt;classes&gt; &lt; class name="testngpack.TestNG" /&gt;
+&lt;/classes&gt;
+&lt;/test&gt;
+&lt;/suite&gt;
+

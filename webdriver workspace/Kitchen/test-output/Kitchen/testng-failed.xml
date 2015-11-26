@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Kitchen]">
+  <parameter name="url" value="http://root.test.customfurnish.com/modular-kitchens"/>
+  <test name="Add Kitchen(failed)">
+    <classes>
+      <class name="kitchen.Pricing">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.Pricing -->
+      <class name="kitchen.AddUnits">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="addUnits" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.AddUnits -->
+      <class name="kitchen.DimensionsCheck">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- kitchen.DimensionsCheck -->
+      <class name="kitchen.ScheduleCallBack">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.ScheduleCallBack -->
+      <class name="kitchen.RemoveUnits">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- kitchen.RemoveUnits -->
+    </classes>
+  </test> <!-- Add Kitchen(failed) -->
+  <test name="Kitchen Pricing(failed)">
+    <classes>
+      <class name="kitchen.Pricing">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="checkPricing" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.Pricing -->
+      <class name="kitchen.AddUnits">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.AddUnits -->
+      <class name="kitchen.DimensionsCheck">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- kitchen.DimensionsCheck -->
+      <class name="kitchen.ScheduleCallBack">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- kitchen.ScheduleCallBack -->
+      <class name="kitchen.RemoveUnits">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- kitchen.RemoveUnits -->
+    </classes>
+  </test> <!-- Kitchen Pricing(failed) -->
+</suite> <!-- Failed suite [Kitchen] -->

@@ -1,0 +1,43 @@
+package test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class findelementtestcase {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("http://root.test.customfurnish.com/modular-kitchens");
+		driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+		driver.findElement(By.xpath("/html/body/div[1]/div[5]/div[1]/div[1]/div/button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[1]/div[5]/div[4]/div[2]/ul/li[1]/div/div[1]/img")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[1]/div[5]/div[5]/div[2]/div[1]/select[1]")).click();
+		Thread.sleep(2000);
+		
+		WebElement el = driver.findElement(By.id("runningLengthFeet"));
+		Select drpfeet = new Select(el);
+		drpfeet.selectByValue("13");
+		Thread.sleep(1000);
+		drpfeet.selectByValue("14");
+		Thread.sleep(1000);
+		el.sendKeys("14");
+		//Thread.sleep(1000);
+		//drpfeet.deselectAll();
+		//drpfeet.selectByValue("14");
+		
+		
+		Thread.sleep(1000);
+			
+			  
+	   
+  }
+}

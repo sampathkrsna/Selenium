@@ -1,0 +1,50 @@
+access control disabled, clients can connect from any host
+Buildfile: /home/kustommade/workspace/Dimensions/build.xml
+
+clean:
+     [echo] deleting existing build directory
+   [delete] Deleting directory /home/kustommade/workspace/Dimensions/build
+
+setClassPath:
+
+init:
+    [mkdir] Created dir: /home/kustommade/workspace/Dimensions/build
+
+loadTestNG:
+
+compile:
+     [echo] 
+     [echo] compiling……….
+    [javac] Compiling 3 source files to /home/kustommade/workspace/Dimensions/build
+
+run:
+   [delete] Deleting directory /home/kustommade/workspace/Dimensions/XSLT_Reports
+    [mkdir] Created dir: /home/kustommade/workspace/Dimensions/XSLT_Reports/18-09-2015
+    [mkdir] Created dir: /home/kustommade/workspace/Dimensions/XSLT_Reports/18-09-2015/errors
+   [testng] [TestNG] Running:
+   [testng]   /home/kustommade/workspace/Dimensions/testng.xml
+   [testng] 
+   [testng] Starting ChromeDriver (v2.9.248304) on port 31281
+   [testng] [0.515][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 15877
+   [testng] [0.501][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 21017
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] 
+   [testng] ===============================================
+   [testng] Check Dimensions
+   [testng] Total tests run: 3, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+
+makexsltreports:
+     [xslt] Processing /home/kustommade/workspace/Dimensions/test-output/testng-results.xml to /home/kustommade/workspace/Dimensions/XSLT_Reports/18-09-2015/index.html
+     [xslt] Loading stylesheet /home/kustommade/workspace/Dimensions/src/xslt/testng-results.xsl
+
+sendMail:
+      [zip] Building zip: /home/kustommade/workspace/Dimensions/XSLT_Reports/18-09-2015.zip
+     [mail] Sending email: Test Reports
+     [mail] Sent email with 1 attachment
+
+BUILD SUCCESSFUL
+Total time: 159 minutes 41 seconds

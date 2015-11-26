@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Check Dimensions]">
+  <parameter name="url" value="http://root.test.customfurnish.com/"/>
+  <test name="External Doors(failed)">
+    <classes>
+      <class name="dimensions.ExternalDoors">
+        <methods>
+          <include name="fullpanel"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- dimensions.ExternalDoors -->
+      <class name="dimensions.FullPanelDoors">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- dimensions.FullPanelDoors -->
+      <class name="dimensions.SlidingDoors">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- dimensions.SlidingDoors -->
+    </classes>
+  </test> <!-- External Doors(failed) -->
+</suite> <!-- Failed suite [Check Dimensions] -->

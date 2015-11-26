@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Check Dimensions" duration-ms="9573403" started-at="2015-09-17T21:00:02Z" finished-at="2015-09-17T23:39:36Z">
+    <groups>
+    </groups>
+    <test name="Full Panel Doors" duration-ms="3256423" started-at="2015-09-17T21:00:02Z" finished-at="2015-09-17T21:54:19Z">
+      <class name="dimensions.FullPanelDoors">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:dimensions.FullPanelDoors@35851384]" name="beforeMethod" is-config="true" duration-ms="8848" started-at="2015-09-18T02:30:02Z" finished-at="2015-09-18T02:30:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://root.test.customfurnish.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fullpanel(java.lang.String)[pri:0, instance:dimensions.FullPanelDoors@35851384]" name="fullpanel" duration-ms="3246951" started-at="2015-09-18T02:30:11Z" finished-at="2015-09-18T03:24:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://root.test.customfurnish.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullpanel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:dimensions.FullPanelDoors@35851384]" name="afterMethod" is-config="true" duration-ms="609" started-at="2015-09-18T03:24:18Z" finished-at="2015-09-18T03:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- dimensions.FullPanelDoors -->
+    </test> <!-- Full Panel Doors -->
+    <test name="Sliding Doors" duration-ms="3055601" started-at="2015-09-17T21:54:19Z" finished-at="2015-09-17T22:45:14Z">
+      <class name="dimensions.SlidingDoors">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:dimensions.SlidingDoors@56cbfb61]" name="beforeMethod" is-config="true" duration-ms="8274" started-at="2015-09-18T03:24:19Z" finished-at="2015-09-18T03:24:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://root.test.customfurnish.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fullpanel(java.lang.String)[pri:0, instance:dimensions.SlidingDoors@56cbfb61]" name="fullpanel" duration-ms="3046756" started-at="2015-09-18T03:24:27Z" finished-at="2015-09-18T04:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://root.test.customfurnish.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullpanel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:dimensions.SlidingDoors@56cbfb61]" name="afterMethod" is-config="true" duration-ms="570" started-at="2015-09-18T04:15:14Z" finished-at="2015-09-18T04:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- dimensions.SlidingDoors -->
+    </test> <!-- Sliding Doors -->
+    <test name="External Doors" duration-ms="3261369" started-at="2015-09-17T22:45:14Z" finished-at="2015-09-17T23:39:36Z">
+      <class name="dimensions.ExternalDoors">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:dimensions.ExternalDoors@6bdf28bb]" name="beforeMethod" is-config="true" duration-ms="8156" started-at="2015-09-18T04:15:14Z" finished-at="2015-09-18T04:15:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://root.test.customfurnish.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fullpanel(java.lang.String)[pri:0, instance:dimensions.ExternalDoors@6bdf28bb]" name="fullpanel" duration-ms="3252608" started-at="2015-09-18T04:15:22Z" finished-at="2015-09-18T05:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://root.test.customfurnish.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullpanel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:dimensions.ExternalDoors@6bdf28bb]" name="afterMethod" is-config="true" duration-ms="604" started-at="2015-09-18T05:09:35Z" finished-at="2015-09-18T05:09:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- dimensions.ExternalDoors -->
+    </test> <!-- External Doors -->
+  </suite> <!-- Check Dimensions -->
+</testng-results>

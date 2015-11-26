@@ -1,0 +1,55 @@
+access control disabled, clients can connect from any host
+Buildfile: /home/kustommade/workspace/Kitchen/build.xml
+
+clean:
+     [echo] deleting existing build directory
+   [delete] Deleting directory /home/kustommade/workspace/Kitchen/build
+
+setClassPath:
+
+init:
+    [mkdir] Created dir: /home/kustommade/workspace/Kitchen/build
+
+loadTestNG:
+
+compile:
+     [echo] 
+     [echo] compiling……….
+    [javac] Compiling 6 source files to /home/kustommade/workspace/Kitchen/build
+
+run:
+   [delete] Deleting directory /home/kustommade/workspace/Kitchen/XSLT_Reports
+    [mkdir] Created dir: /home/kustommade/workspace/Kitchen/XSLT_Reports/18-09-2015
+    [mkdir] Created dir: /home/kustommade/workspace/Kitchen/XSLT_Reports/18-09-2015/errors
+   [testng] [TestNG] Running:
+   [testng]   /home/kustommade/workspace/Kitchen/testng.xml
+   [testng] 
+   [testng] Starting ChromeDriver (v2.9.248304) on port 7717
+   [testng] [0.541][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 15058
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 2589
+   [testng] [0.500][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 10584
+   [testng] [0.499][WARNING]: PAC support disabled because there is no system implementation
+   [testng] Starting ChromeDriver (v2.9.248304) on port 23875
+   [testng] [0.495][WARNING]: PAC support disabled because there is no system implementation
+   [testng] 
+   [testng] ===============================================
+   [testng] Kitchen
+   [testng] Total tests run: 5, Failures: 2, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] The tests failed.
+
+makexsltreports:
+     [xslt] Processing /home/kustommade/workspace/Kitchen/test-output/testng-results.xml to /home/kustommade/workspace/Kitchen/XSLT_Reports/18-09-2015/index.html
+     [xslt] Loading stylesheet /home/kustommade/workspace/Kitchen/src/xslt/testng-results.xsl
+
+sendMail:
+      [zip] Building zip: /home/kustommade/workspace/Kitchen/XSLT_Reports/18-09-2015.zip
+     [mail] Sending email: Test Reports
+     [mail] Sent email with 1 attachment
+
+BUILD SUCCESSFUL
+Total time: 9 minutes 38 seconds

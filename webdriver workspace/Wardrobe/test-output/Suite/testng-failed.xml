@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="url" value="http://root.test.kustommade.com/"/>
+  <test name="ExtremeDimensions(failed)">
+    <classes>
+      <class name="ExtremeDimensions.ExtremeDimensions">
+        <methods>
+          <include name="extremeDimensions"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- ExtremeDimensions.ExtremeDimensions -->
+    </classes>
+  </test> <!-- ExtremeDimensions(failed) -->
+</suite> <!-- Failed suite [Suite] -->
